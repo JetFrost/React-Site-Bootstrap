@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import { Route, Router, Switch } from 'react-router';
-import Home from './Home';
-import About from './About';
-import Contacts from './Contacts';
-import Blog from './Blog';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Home from '../Pages/Home';
+import About from '../Pages/About';
+import Contacts from '../Pages/Contacts';
+import Blog from '../Pages/Blog';
 import logo from './logo192.png';
 
 class Header extends Component {
     render() {
         return (
             <div>
-                <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+                <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <img 
